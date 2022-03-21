@@ -1,3 +1,16 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="safe_padding">8dp</dimen>
+    <dimen name="card_radius">12dp</dimen>
+    <dimen name="card_view_height">300dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
 </resources>
