@@ -44,6 +44,9 @@
         <entry key="..\:/Android/WeatherApp/app/src/main/res/layout/layout_current_place_detail.xml" value="0.1778115501519757" />
         <entry key="..\:/Android/WeatherApp/app/src/main/res/layout/layout_empty.xml" value="0.17603850050658562" />
         <entry key="..\:/Android/WeatherApp/app/src/main/res/layout/layout_error.xml" value="0.17603850050658562" />
+        <entry key="..\:/Android/WeatherApp/app/src/main/res/layout/layout_flipper_detail.xml" value="0.1778115501519757" />
+        <entry key="..\:/Android/WeatherApp/app/src/main/res/layout/layout_loading.xml" value="0.1778115501519757" />
+        <entry key="..\:/Android/WeatherApp/app/src/main/res/layout/layout_toolbar.xml" value="0.1778115501519757" />
         <entry key="..\:/Android/WeatherApp/app/src/main/res/layout/lifer_index.xml" value="0.1" />
         <entry key="..\:/Android/WeatherApp/app/src/main/res/layout/place_item.xml" value="0.5" />
         <entry key="..\:/Android/WeatherApp/app/src/main/res/layout/search_place_fragment.xml" value="0.4009077155824508" />

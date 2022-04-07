@@ -53,6 +53,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
+    implementation 'com.kingja.loadsir:loadsir:1.3.6'
     testImplementation 'junit:junit:4.13.2'
     debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
 
