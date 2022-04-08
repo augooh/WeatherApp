@@ -29,7 +29,7 @@ class HourlyWeatherItem(context: Context) :
         mRootView = LayoutInflater.from(context).inflate(R.layout.hourly_item, null)
         mTimeText = mRootView.findViewById(R.id.hourly_time)
         mWeather = mRootView.findViewById(R.id.hourly_weather)
-        mTemperatureView = mRootView.findViewById(R.id.hourly_temp)
+        mTemperatureView = mRootView.findViewById<View>(R.id.hourly_temp)
         mWindOri = mRootView.findViewById(R.id.hourly_wind_ori)
         mWIndLevel = mRootView.findViewById(R.id.hourly_wind_level)
         mAirLevel = mRootView.findViewById(R.id.hourly_air_level)
