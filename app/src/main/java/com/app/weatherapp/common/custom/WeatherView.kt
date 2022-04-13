@@ -16,5 +16,7 @@ import com.app.weatherapp.common.util.getSky
 import com.app.weatherapp.model.HourlyWeather
 import java.util.*
 
-class WeatherView {
+class WeatherView :
+    HorizontalScrollView {
+
 }

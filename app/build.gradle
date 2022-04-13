@@ -1,13 +1,12 @@
-plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-    id 'kotlin-android'
-    id 'kotlin-android-extensions'
-}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
 
 android {
     compileSdk 31
-
     defaultConfig {
         applicationId "com.app.weatherapp"
         minSdk 29
@@ -35,14 +34,22 @@ android {
         viewBinding true
     }
 }
-
+kapt {
+    useBuildCache = true
+    javacOptions {
+        option("-Xmaxerrs", 500)
+    }
+}
 dependencies {
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.9.0'
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
+
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     implementation 'com.amap.api:location:latest.integration'
     implementation 'com.github.zhpanvip:BannerViewPager:2.7.3'
@@ -54,6 +61,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
     implementation 'com.kingja.loadsir:loadsir:1.3.6'
+    implementation 'androidx.room:room-common:2.4.2'
     testImplementation 'junit:junit:4.13.2'
     debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
 
@@ -64,4 +72,8 @@ dependencies {
     // Kotlin
     implementation("androidx.preference:preference-ktx:1.2.0")
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.amap.api:search:latest.integration'
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+    kapt "com.android.databinding:compiler:4.0.0"
+    kapt "androidx.room:room-compiler:2.2.5"
 }
