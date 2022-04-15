@@ -62,8 +62,12 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
     implementation 'com.kingja.loadsir:loadsir:1.3.6'
     implementation 'androidx.room:room-common:2.4.2'
+    implementation 'androidx.room:room-ktx:2.4.2'
     testImplementation 'junit:junit:4.13.2'
     debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
 
