@@ -9,7 +9,8 @@ buildscript {
         maven { url 'https://maven.aliyun.com/nexus/content/groups/public' } //复制这行
         maven { url "https://raw.githubusercontent.com/Pgyer/mvn_repo_pgyer/master" }
         maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'} //复制这行
-    }
+        maven { url "https://raw.githubusercontent.com/Pgyer/mvn_repo_pgyer/master"}
+        }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.4"
 

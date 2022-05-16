@@ -1,5 +1,9 @@
 package com.app.weatherapp.common.state
 
-class StateType {
-
+enum class StateType {
+    SUCCESS,
+    ERROR,
+    EMPTY,
+    NETWORK_ERROR,
+    LOADING
 }
