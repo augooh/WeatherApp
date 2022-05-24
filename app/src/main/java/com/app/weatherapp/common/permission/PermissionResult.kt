@@ -1,4 +1,7 @@
 package com.app.weatherapp.common.permission
 
-class PermissionResult {
+sealed class PermissionResult {
+    object Grant : PermissionResult()
+    class Deny(val permission: Array<String>) : PermissionResult()
+    class Rationale(val permissions: Array<String>) : PermissionResult()
 }

@@ -2,7 +2,7 @@ package com.app.weatherapp.model
 
 import java.util.*
 
-data class Daily (
+data class Daily(
     val api_status: String,
     val api_version: String,
     val lang: String,
@@ -13,7 +13,30 @@ data class Daily (
     val timezone: String,
     val tzshift: Int,
     val unit: String
-){
+) {
+
+    data class Result(
+        val daily: Daily,
+        val primary: Int
+    )
+
+    data class Daily(
+        val air_quality: AirQuality,
+        val astro: List<Astro>,
+        val cloudrate: List<Cloudrate>,
+        val dswrf: List<Dswrf>,
+        val humidity: List<Humidity>,
+        val life_index: LifeIndex,
+        val precipitation: List<Precipitation>,
+        val pressure: List<Pressure>,
+        val skycon: List<Skycon>,
+        val skycon_08h_20h: List<Skycon08h20h>,
+        val skycon_20h_32h: List<Skycon20h32h>,
+        val status: String,
+        val temperature: List<Temperature>,
+        val visibility: List<Visibility>,
+        val wind: List<Wind>
+    )
 
     data class DailyData(
         val date: Date,

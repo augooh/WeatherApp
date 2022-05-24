@@ -6,5 +6,5 @@ import com.app.weatherapp.base.repository.BaseRepository
 import com.app.weatherapp.common.util.CommonUtil
 import com.app.weatherapp.common.state.State
 
-class BaseViewModel<T> {
+open class BaseViewModel<T> {
 }

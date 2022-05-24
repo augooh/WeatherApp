@@ -31,7 +31,5 @@ abstract class PlaceDataBase : RoomDatabase() {
             }
             return INSTANCE
         }
-
-
     }
 }

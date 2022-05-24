@@ -62,6 +62,26 @@
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
+        android:id="@+id/searchPlaceFragment"
+        android:name="com.app.weatherapp.module.searchplace.view.SearchPlaceFragment"
+        android:label="search_place_fragment"
+        tools:layout="@layout/search_place_fragment">
+        <action
+            android:id="@+id/action_searchPlaceFragment_to_choosePlaceFragment"
+            app:destination="@id/choosePlaceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_searchPlaceFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
         android:id="@+id/SecondFragment"
         android:name="com.app.weatherapp.module.searchplace.view.SearchPlace"
         android:label="search_place_fragment"
@@ -97,5 +117,20 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/webFragment"
+        android:label="web_fragment"
+        android:name="com.app.weatherapp.module.web.WebFragment"
+        tools:layout="@layout/web_fragment">
+        <action
+            android:id="@+id/action_webFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <argument
+            android:name="url"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
     </fragment>
 </navigation>

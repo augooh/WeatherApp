@@ -8,9 +8,9 @@ import androidx.startup.AppInitializer
 import com.app.weatherapp.common.callback.EmptyCallBck
 import com.app.weatherapp.common.callback.LoadingCallBack
 import com.kingja.loadsir.core.LoadSir
-import com.wjx.android.wanandroidmvvm.common.callback.*
-import com.wjx.android.weather.common.startup.WeatherStartUp
-import com.wjx.android.weather.common.util.SPreference
+import com.app.weatherapp.common.callback.*
+import com.app.weatherapp.common.startup.WeatherStartUp
+import com.app.weatherapp.common.util.SPreference
 import java.lang.reflect.ParameterizedType
 
 open class BaseApplication : Application(), ViewModelStoreOwner {
