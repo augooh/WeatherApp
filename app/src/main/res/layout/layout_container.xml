@@ -89,8 +89,17 @@
                     <View
                         android:layout_width="0dp"
                         android:layout_height="5dp" />
-
                     <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/home_recycler"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+                    </LinearLayout>
+                    <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_15" />
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/life_index"
                         style="@style/Widget.MaterialComponents.CardView"
                         android:layout_width="match_parent"
@@ -104,7 +113,8 @@
                         android:layout_marginBottom="@dimen/safe_padding">
 
                         <include layout="@layout/life_index" />
-                </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 

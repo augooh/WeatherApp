@@ -10,7 +10,7 @@ import com.app.weatherapp.model.Place
 class ChoosePlaceRepository(var loadState: MutableLiveData<State>) : ApiRepository() {
     suspend fun queryAllPlace() = RoomHelper.queryAllPlace(loadState)
     suspend fun queryAllChoosePlace() = RoomHelper.queryAllChoosePlace(loadState)
-    suspend fun ddeletePlace(place: Place?) = RoomHelper.queryAllChoosePlace(loadState)
+    suspend fun deletePlace(place: Place?) = RoomHelper.queryAllChoosePlace(loadState)
     suspend fun deleteChoosePlace(choosePlaceData: ChoosePlaceData) =
         RoomHelper.deleteChoosePlace(choosePlaceData)
 
